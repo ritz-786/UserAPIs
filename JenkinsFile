@@ -1,6 +1,6 @@
 node {
   stage('SCM Checkout'){
-    git 'https://github.com/ritz-786/UserAPIs'
+    git branch: 'main', url: 'https://github.com/ritz-786/UserAPIs/'
   }
   stage('Compile-package'){
     sh 'mvn package'
